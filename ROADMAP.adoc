@@ -1,94 +1,75 @@
 // SPDX-License-Identifier: AGPL-3.0-or-later
 = asdf-ui-plugin Roadmap
-:toc:
+:toc: macro
+:toc-title: Phases
 :toclevels: 2
-:icons: font
 
-== Project Status
+*Repo project specification - will be uploaded shortly*
 
-[IMPORTANT]
+== Current State
+
+[NOTE]
 ====
-*Current Phase:* Pre-development +
-*Specification:* Pending upload
+**Phase 0: Infrastructure Only**
+
+No implementation exists. This roadmap will be updated when project specification is uploaded.
 ====
 
-== Completed
+== Provisional Roadmap
 
-[%header,cols="1,3,1"]
+The following phases are placeholders pending project specification:
+
+=== Phase 1: Specification & Design
+
+* [ ] Upload project specification
+* [ ] Define UI requirements and user workflows
+* [ ] Choose UI framework (Tauri 2.0+ or Dioxus per policy)
+* [ ] Design plugin architecture for asdf integration
+
+=== Phase 2: Core Implementation
+
+* [ ] Set up Rust/ReScript project structure
+* [ ] Implement asdf plugin interface
+* [ ] Build core UI components
+* [ ] Integrate with asdf version management commands
+
+=== Phase 3: Feature Development
+
+* [ ] Plugin listing and search
+* [ ] Version selection interface
+* [ ] Installation progress tracking
+* [ ] Environment management UI
+
+=== Phase 4: Polish & Release
+
+* [ ] Testing and QA
+* [ ] Documentation
+* [ ] Package for distribution (Guix, Nix)
+* [ ] Initial release
+
+== Infrastructure Complete
+
+[cols="1,1,2"]
 |===
-|Item |Description |Status
+| Item | Status | Notes
 
-|Repository infrastructure
-|GitHub repository with multi-forge mirroring to GitLab, Codeberg, Bitbucket
-|✓ Done
+| Multi-forge mirroring
+| icon:check[role=green] Done
+| GitLab, Codeberg, Bitbucket
 
-|Sync automation
-|Instant propagation on push/release via repository dispatch
-|✓ Done
+| Instant sync
+| icon:check[role=green] Done
+| Automatic propagation on push
 
-|Development policy
-|Language stack and security requirements defined (CLAUDE.md)
-|✓ Done
+| Development policy
+| icon:check[role=green] Done
+| Hyperpolymath standards in CLAUDE.md
+
+| SPDX licensing
+| icon:check[role=green] Done
+| AGPL-3.0-or-later headers
 |===
 
-== Pending Specification
+== Contributing
 
-The following will be defined once project specification is uploaded:
-
-* [ ] Target UI tool/framework to be managed
-* [ ] Version resolution strategy
-* [ ] Platform support matrix (Linux, macOS, Windows)
-* [ ] Binary vs source installation approach
-
-== Planned Milestones
-
-=== Phase 1: Foundation
-_Timeline: After specification upload_
-
-* [ ] Define target tool and version sources
-* [ ] Implement `bin/list-all` - list available versions
-* [ ] Implement `bin/download` - download specific version
-* [ ] Implement `bin/install` - install downloaded version
-
-=== Phase 2: Core Plugin
-
-* [ ] Implement `bin/list-bin-paths` - expose binaries
-* [ ] Add version verification (checksums)
-* [ ] Platform detection and binary selection
-* [ ] Basic test suite
-
-=== Phase 3: Polish
-
-* [ ] Add `bin/latest-stable` for convenience
-* [ ] Legacy version support (if applicable)
-* [ ] CI testing across platforms
-* [ ] Documentation and examples
-
-=== Phase 4: Release
-
-* [ ] Submit to asdf plugin registry
-* [ ] Publish v1.0.0 release
-* [ ] Announce availability
-
-== Architecture (Tentative)
-
-[source]
-----
-asdf-ui-plugin/
-├── bin/
-│   ├── download          # Fetch version archive
-│   ├── install           # Extract and install
-│   ├── list-all          # Query available versions
-│   ├── list-bin-paths    # Expose installed binaries
-│   └── latest-stable     # Resolve latest stable
-├── lib/
-│   └── utils.bash        # Shared functions
-├── scripts/
-│   └── ci-test.bash      # Integration tests
-└── test/
-    └── ...               # Test cases
-----
-
-== Notes
-
-This roadmap will be updated once the project specification is available.
+Awaiting project specification before accepting contributions.
