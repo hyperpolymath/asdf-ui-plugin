@@ -1,0 +1,52 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+= asdf-ui-plugin
+:toc: macro
+:toc-title: Contents
+:toclevels: 2
+
+*Repo project specification - will be uploaded shortly*
+
+== Status
+
+[IMPORTANT]
+====
+This repository is currently a **placeholder**. No implementation code exists yet.
+====
+
+== What Exists
+
+[cols="1,3"]
+|===
+| Component | Description
+
+| `.github/workflows/mirror.yml`
+| Hub-and-spoke mirroring to GitLab, Codeberg, Bitbucket
+
+| `.github/workflows/instant-sync.yml`
+| Automatic forge propagation on push/release
+
+| `.claude/CLAUDE.md`
+| Hyperpolymath development standards (language policy)
+|===
+
+== Intended Purpose
+
+Based on the project name, this will be a **UI plugin for asdf** (the extensible version manager).
+
+See link:ROADMAP.adoc[ROADMAP.adoc] for planned development phases.
+
+== Development Standards
+
+This project follows the **Hyperpolymath Language Policy**:
+
+* *Primary*: ReScript, Rust, Deno
+* *Mobile*: Tauri 2.0+ or Dioxus (no Kotlin/Swift)
+* *Backend*: Gleam (BEAM or JS target)
+* *Config*: Nickel, Guile Scheme
+* *Package Management*: Guix (primary), Nix (fallback)
+
+See `.claude/CLAUDE.md` for full policy details.
+
+== License
+
+AGPL-3.0-or-later
