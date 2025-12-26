@@ -1,0 +1,71 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+= asdf-ui-plugin
+:toc: preamble
+:toclevels: 2
+:icons: font
+
+[NOTE]
+====
+*Repository Status:* Project specification - will be uploaded shortly
+====
+
+== Overview
+
+This repository will contain an https://asdf-vm.com/[asdf] plugin for managing UI tooling versions.
+
+== Current State
+
+This repository currently contains infrastructure configuration only:
+
+* Multi-forge mirroring (GitHub, GitLab, Codeberg, Bitbucket)
+* Instant sync propagation for releases
+* Development guidelines (CLAUDE.md)
+
+No plugin source code has been implemented yet.
+
+== Technology Stack (Planned)
+
+Per the Hyperpolymath language policy:
+
+[cols="1,2"]
+|===
+|Component |Technology
+
+|Plugin scripts
+|Bash/POSIX Shell
+
+|Performance-critical components
+|Rust (if needed)
+
+|Build tooling
+|Deno (no npm/Node.js)
+|===
+
+== Installation
+
+[source,bash]
+----
+# Coming soon - plugin not yet implemented
+asdf plugin add ui https://github.com/hyperpolymath/asdf-ui-plugin.git
+----
+
+== Contributing
+
+Contributions welcome once the project specification is published.
+
+=== Development Requirements
+
+* Follow language policy in `.claude/CLAUDE.md`
+* SPDX license headers on all files
+* SHA-pinned dependencies only
+
+== License
+
+AGPL-3.0-or-later
+
+== Mirrors
+
+* https://github.com/hyperpolymath/asdf-ui-plugin[GitHub] (primary)
+* https://gitlab.com/hyperpolymath/asdf-ui-plugin[GitLab]
+* https://codeberg.org/hyperpolymath/asdf-ui-plugin[Codeberg]
+* https://bitbucket.org/hyperpolymath/asdf-ui-plugin[Bitbucket]
