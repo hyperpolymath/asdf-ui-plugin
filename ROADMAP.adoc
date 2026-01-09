@@ -4,48 +4,44 @@
 :toc-title: Phases
 :toclevels: 2
 
-*Repo project specification - will be uploaded shortly*
+Terminal user interface plugin for asdf version manager.
 
 == Current State
 
 [NOTE]
 ====
-**Phase 0: Infrastructure Only**
-
-No implementation exists. This roadmap will be updated when project specification is uploaded.
+**Phase 4: Complete** - All core functionality implemented and working.
 ====
 
-== Provisional Roadmap
+== Development Roadmap
 
-The following phases are placeholders pending project specification:
+=== Phase 1: Specification & Design icon:check[role=green]
 
-=== Phase 1: Specification & Design
+* [x] Define project requirements (Terminal UI for asdf)
+* [x] Define UI requirements and user workflows
+* [x] Choose implementation (Bash-based TUI for portability)
+* [x] Design plugin architecture for asdf integration
 
-* [ ] Upload project specification
-* [ ] Define UI requirements and user workflows
-* [ ] Choose UI framework (Tauri 2.0+ or Dioxus per policy)
-* [ ] Design plugin architecture for asdf integration
+=== Phase 2: Core Implementation icon:check[role=green]
 
-=== Phase 2: Core Implementation
+* [x] Set up project structure (bin/, lib/, hooks/)
+* [x] Implement asdf plugin interface (list-all, download, install)
+* [x] Build core TUI components
+* [x] Integrate with asdf version management commands
 
-* [ ] Set up Rust/ReScript project structure
-* [ ] Implement asdf plugin interface
-* [ ] Build core UI components
-* [ ] Integrate with asdf version management commands
+=== Phase 3: Feature Development icon:check[role=green]
 
-=== Phase 3: Feature Development
+* [x] Plugin listing and search
+* [x] Version selection interface
+* [x] Installation progress tracking
+* [x] Environment management UI
 
-* [ ] Plugin listing and search
-* [ ] Version selection interface
-* [ ] Installation progress tracking
-* [ ] Environment management UI
+=== Phase 4: Polish & Release icon:check[role=green]
 
-=== Phase 4: Polish & Release
-
-* [ ] Testing and QA
-* [ ] Documentation
-* [ ] Package for distribution (Guix, Nix)
-* [ ] Initial release
+* [x] Testing and QA (ShellCheck, CI pipeline)
+* [x] Documentation (README, ROADMAP, CONTRIBUTING)
+* [x] Security validation hooks
+* [x] Initial release (v1.0.0)
 
 == Infrastructure Complete
 
@@ -72,4 +68,4 @@ The following phases are placeholders pending project specification:
 
 == Contributing
 
-Awaiting project specification before accepting contributions.
+Contributions are welcome! See link:CONTRIBUTING.adoc[CONTRIBUTING.adoc] for guidelines.
